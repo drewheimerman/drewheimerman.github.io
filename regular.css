@@ -125,7 +125,7 @@
 .social{
     position: relative;
     width: 100%;
-    padding: 30px;
+    
     text-align: center;
     
 }
@@ -253,7 +253,8 @@
         left: -5px;
     }
     #second p{
-        margin-top: -40px;
+        margin-top: -120px;
+        font-size: 1.2em;
     }
 }
 /*#firstimg{
