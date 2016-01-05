@@ -83,12 +83,15 @@
     color: white;
     max-width: 500px;
     display: flex;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 30px;
     
     
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
+    
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    
     flex-direction: column;
 }
 
@@ -100,6 +103,7 @@
     border-radius: 50%;
     position: relative;
     flex-direction: column;
+    border: 1.5px solid #020201;
 }
 #portrait{
     
