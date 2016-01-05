@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Fanwood';
+    src: url('/assets/fonts/Linden Hill/LindenHill-webfont.eot');
+    src: url('/assets/fonts/Linden Hill/LindenHill-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Linden Hill/LindenHill-webfont.woff') format('woff'),
+         url('/assets/fonts/Linden Hill/LindenHill-webfont.ttf') format('truetype'),
+         url('/assets/fonts/Linden Hill/LindenHill-webfont.svg#jrhandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
