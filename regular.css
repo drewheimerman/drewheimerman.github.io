@@ -1,288 +1,45 @@
-#first{
-    background-image: url(/assets/img/EuropeanAlleywaay.jpg);
-    background-position: 50% 50%;
-    background-size: 100% auto;
-    background-size: cover;
-    
-    
-    //background-attachment: fixed;
-    //align-content: center;
-    
-    
-    background-repeat: no-repeat;
+body{
+    background-color: white;
     width: 100%;
     height: 100%;
 }
-
-#first header{
-    background-color: ghostwhite;
-    height: 55px;
-    //position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 1;
+header{padding:1em}
+header>h1{
+    font-family: 'Didot', serif;
+    font-size: 2em;
 }
-#first header{
+#content{
+    //height: inherit;
+    padding: 1em;
+    text-align: center;
+}
+#content form{
+    flex: auto
+}
+#content form input{
+    //flex-direction: column;
+    flex-shrink: 1; 
+}
+#content .vert_form input{
+    width: 36em;
+}
+/*#content .vert_form input:nth-child(4){
+    width: 30em;
+}*/
+footer{
+    height: 100px;
+    color: slategray;
+    background-color: black;
+    padding: 1em;
+}
+
+/*-----CLASSES-----*/
+
+.vert_form{
     display: block;
-    text-align: center;
 }
-
-
-#first header h1{
-    font-family: 'Didot', 'Linden Hill', serif;
-    letter-spacing: 2.5px;
-    
-    font-size: 2.5em;
-    padding-top: 9.5px;
-    //margin-left: 8px;
-    text-align: center;
-    color:black;
-    text-shadow: 0px 0px 2px rgba(0,0,0,.3);
+.vert_form input{
+    display: block;
+    margin-bottom: .5em;
+    padding: .5em;
 }
-#bio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
-    position: absolute;
-    /*top: 30%;
-    height:auto;*/
-    top:55px;
-    bottom: 0;
-    background-color: rgba(0,0,0,.5);
-    
-}
-#bio p{
-    display: flex;
-    flex-direction: column;
- 
-    border: 1px solid white;
-    padding: 1em;
-    max-width: 400px;
-    text-align: center;
-    color: ghostwhite;
-    font-size: 3em;
-    text-align: justify;
-    justify-content: space-between;
-    
-    
-}
-
-/*----Second Slide----*/
-
-#second{
-    background-color: #2a3323;
-    height: 100%;
-    width: 100%;
-    align-content: center;
-    align-items: center;
-    
-}
-#second p{
-    color: white;
-    max-width: 500px;
-    display: flex;
-    font-size: 1em;
-    padding: 30px;
-    
-    
-    font-family: "Montserrat", sans-serif;
-    
-    letter-spacing: 1px;
-    line-height: 1.5em;
-    
-    flex-direction: column;
-}
-
-/*PORTRAIT*/
-.portrait-crop{
-    width:250px;
-    height: 250px;
-    overflow: hidden;
-    border-radius: 50%;
-    position: relative;
-    flex-direction: column;
-    border: 1.5px solid #020201;
-}
-#portrait{
-    
-    width: 300px;
-    height: auto;
-    position: absolute;
-    flex-grow: 1;
-    top: -18px;
-    left: -5px;
-    
-}
-
-.flex{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    flex-wrap: wrap;
-    
-}
-.social{
-    position: relative;
-    width: 100%;
-    
-    text-align: center;
-    
-}
-#LIN{
-    width: 28px;
-}
-#FB{
-    width: 28px;
-}
-#TW{
-    width: 28px;
-}
-
-
-/*-----Third Page-----*/
-#third{
-    background-color: #221912;
-    height: 100%;
-    width: 100%;
-    align-content: center;
-    align-items: center;
-    padding: 20px;
-    
-}
-#third h1, dl{
-    flex-direction: column;
-    color: white;
-}
-#third h1{
-    font-size: 4em;
-    padding: 1em;
-    
-}
-#third dl{
-    width: auto;
-}
-.percentage{
-    max-width: 500px;
-    padding: 20px;
-    margin-top:10px;
-}
-.percentage:first-child{
-    margin-top:0;
-}
-.p20{
-    
-}
-/*.down-triangle{
-    display: flex;
-    flex
-    width: 0;
-    height: 0;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-top: 20px solid white;
-    
-}*/
-
-
-/*Animation*/
-.fade-animation{
-    -webkit-animation: fadein 2s; 
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-}
-
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-
-/*MEDIA QUERIES*/
-
-@media (max-width: 503px), (max-device-width:503px and max-device-pixel-ratio: 1){
-    #first header{
-        height: 96px;
-    }
-    #bio{
-        top:96px;
-    }
-    #bio p{
-        border:none;
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
-        font-size: 2.38em;
-        padding-left: .5em;
-        padding-right: .5em;
-    }
-}
-@media (max-width: 850px), (max-device-width:850px){
-    .portrait-crop{
-        height:300px;
-        width: 300px;
-    }
-    #portrait{
-        width: 350px;
-        left: -5px;
-    }
-    #second p{
-        margin-top: -120px;
-        font-size: 1.2em;
-    }
-}
-/*#firstimg{
-    background-image: url(/assets/img/EuropeanAlleywaay.jpg);
-    
-    position: absolute;
-    width: 1000px;
-    height:auto;
-    //width: 100%;
-    //height: 100%;
-    overflow:hidden;
-    //left: -1152px;
-    //top: -960px;
-    //transform: translateX(800px);
-    //transform: translateY(-500px);
-    
-}
-#firstimg img{
-    height: 10px;
-    width: 20px;
-}
-
-#intro{
-    position: absolute;
-    top: 300px;
-    left: 50%;
-}*/
