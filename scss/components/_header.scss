@@ -1,0 +1,29 @@
+header{
+    margin-bottom: 3em;
+    font-family: 'Avenir';
+    
+    h1{
+        font-family: $name-typeface;
+        font-size: 2em;
+        display:inline-block;
+    }
+}
+
+.lang-options{
+    display: inline-block;
+    float: right;
+    li{
+        display: inline;
+        color: grey;
+        padding-right: .5em;
+        padding-left: .5em;
+        padding-top: .5em;
+        &:hover{
+            color: black;
+        }
+        &:last-child{
+            padding-right: none;
+        }
+        
+    }
+}

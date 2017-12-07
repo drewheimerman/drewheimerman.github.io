@@ -1,0 +1,23 @@
+#bio{
+    //border: 1px solid black;
+    font-family: $body-emphasis-typeface;
+    font-style: oblique;
+    
+    letter-spacing: normal;
+    font-size: 2em;
+    //flex: 2;
+    width: 820px;
+}
+#bio form{
+    flex: auto
+}
+#bio form input{
+    //flex-direction: column;
+    flex-shrink: 1; 
+}
+#bio .vert_form input{
+    width: 36em;
+}
+/*#content .vert_form input:nth-child(4){
+    width: 30em;
+}*/
